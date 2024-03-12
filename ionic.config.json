@@ -1,0 +1,7 @@
+{
+  "name": "msaki",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
