@@ -1,10 +1,10 @@
 import React from "react";
 import { Button, StatusBar, Text, View } from "react-native";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { RootStackParamList } from "./router";
+import { Routes } from "./router";
 import styles from "./styles";
 
-type Props = NativeStackScreenProps<RootStackParamList>;
+type Props = NativeStackScreenProps<Routes>;
 
 export default function Home({ navigation }: Props) {
   return (

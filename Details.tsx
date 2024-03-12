@@ -1,10 +1,10 @@
 import React from "react";
 import { StatusBar, View, Text } from "react-native";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { RootStackParamList } from "./router";
+import { Routes } from "./router";
 import styles from "./styles";
 
-type Props = NativeStackScreenProps<RootStackParamList, "Details">;
+type Props = NativeStackScreenProps<Routes, "Details">;
 
 function Details({ route, navigation }: Props) {
   const { content, title } = route.params;
