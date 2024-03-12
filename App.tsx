@@ -1,44 +1,19 @@
-import React from "react";
-import { View, StatusBar } from "react-native";
-import styles from "./styles";
-import Box from "./components/Box";
-import Row from "./components/Row";
-import Column from "./components/Column";
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Home from "./Home";
+import Settings from "./Settings";
+import { RootStackParamList } from "./router";
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar hidden={false} />
-      <Row>
-        <Column>
-          <Box>#1</Box>
-          <Box>#2</Box>
-        </Column>
-        <Column>
-          <Box>#3</Box>
-          <Box>#4</Box>
-        </Column>
-      </Row>
-      <Row>
-        <Column>
-          <Box>#5</Box>
-          <Box>#6</Box>
-        </Column>
-        <Column>
-          <Box>#7</Box>
-          <Box>#8</Box>
-        </Column>
-      </Row>
-      <Row>
-        <Column>
-          <Box>#9</Box>
-          <Box>#10</Box>
-        </Column>
-        <Column>
-          <Box>#11</Box>
-          <Box>#12</Box>
-        </Column>
-      </Row>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name='Home' component={Home} />
+        <Stack.Screen name='Settings' component={Settings} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
