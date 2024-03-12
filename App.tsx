@@ -5,6 +5,7 @@ import Home from "./Home";
 import Settings from "./Settings";
 import { RootStackParamList } from "./router";
 import Details from "./Details";
+import { Button } from "react-native";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -13,7 +14,15 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name='Home' component={Home} />
-        <Stack.Screen name='Details' component={Details} />
+        <Stack.Screen
+          name='Details'
+          component={Details}
+          options={({ route }) => ({
+            headerRight: () => {
+              return <Button title='Buy' onPress={() => {}} disabled={route.params.stock === 0} />;
+            },
+          })}
+        />
         <Stack.Screen name='Settings' component={Settings} />
       </Stack.Navigator>
     </NavigationContainer>
