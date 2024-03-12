@@ -77,3 +77,6 @@
 1. Meeting w/ jenks (3/10) 30 mins 10pm - 10:30pm
    - [x] Consult hackathon ideas
    - [ ] Reschedule meeting
+1. Fleek
+   - [ ] Fleek put uploads
+   - [ ] Fleek get content
