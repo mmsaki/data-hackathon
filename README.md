@@ -51,7 +51,7 @@
 
 1. React Native Docs (3/9) 8 hours 3am - 10am
    - [x] Chapter 17: Kick Starting React Native Projects
-   - [ ] Chapter 18: Building responsive layouts with flexbox
+   - [x] Chapter 18: Building responsive layouts with flexbox
    - [ ] Chapter 19: Navigating Between Screens
    - [ ] Chapter 20: Rendering Item Lists
    - [ ] Chapter 21: Showing Progress
