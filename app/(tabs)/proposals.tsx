@@ -1,14 +1,12 @@
 import { Text, View } from "@/components/Themed";
 import styles from "../styles";
-import List from "@/atomic/list";
 
-const News = () => {
+const Proposals = () => {
   return (
     <View style={styles.container}>
-      <Text>News</Text>
-      <List />
+      <Text>Proposals</Text>
     </View>
   );
 };
 
-export default News;
+export default Proposals;

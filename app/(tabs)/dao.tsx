@@ -1,14 +1,13 @@
+import React from "react";
 import { Text, View } from "@/components/Themed";
 import styles from "../styles";
-import List from "@/atomic/list";
 
-const News = () => {
+const Dao = () => {
   return (
     <View style={styles.container}>
-      <Text>News</Text>
-      <List />
+      <Text>Data DAO</Text>
     </View>
   );
 };
 
-export default News;
+export default Dao;

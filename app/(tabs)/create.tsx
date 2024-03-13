@@ -1,14 +1,12 @@
 import { Text, View } from "@/components/Themed";
 import styles from "../styles";
-import List from "@/atomic/list";
 
-const News = () => {
+const Create = () => {
   return (
     <View style={styles.container}>
-      <Text>News</Text>
-      <List />
+      <Text>Create w/ Fleek</Text>
     </View>
   );
 };
 
-export default News;
+export default Create;
