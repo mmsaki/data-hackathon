@@ -3,7 +3,7 @@
 | day  | name             | description                | status report |
 | ---- | ---------------- | -------------------------- | ------------- |
 | 3/9  | filecoin paper   | [read paper]()             | done ✨       |
-| 3/10 | Meeting w/ jenks | [meeting]()                | cancelled ❗  |
+| 3/10 | Meeting w/ jenks | [meeting]()                |               |
 | 3/11 | IPC              | [watch talks]()            |               |
 | 3/12 | Fleek docs       | [documentation help]()     |               |
 | 3/13 | FVM              |                            |               |
