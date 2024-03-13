@@ -1,18 +1,27 @@
+import React from "react";
 import styles from "@/app/styles";
 import { View, Text } from "@/components/Themed";
 import { memo } from "react";
 import { FlatList } from "react-native";
+import ListControls from "./ListControls";
+import { Content } from "./types";
 
-const data = new Array(100).fill(null).map((v, i) => ({ key: i.toString(), value: `Item ${i}` }));
+type Props = {
+  content: Array<{ key: string; value: string }>;
+  onFilter: (text: string) => void;
+  onSort: () => void;
+  asc: boolean;
+};
 
-const List = memo(() => {
+const List = (props: Props) => {
+  const { content, onFilter, onSort, asc } = props;
   return (
     <>
       <View style={styles.row}>
-        <FlatList data={data} renderItem={({ item }) => <Text>{item.value}</Text>} />
+        <FlatList data={content} ListHeaderComponent={<ListControls {...{ onFilter, onSort, asc }} />} renderItem={({ item }) => <Text>{item.value}</Text>} />
       </View>
     </>
   );
-});
+};
 
-export default List;
+export default memo(List);

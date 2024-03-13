@@ -39,4 +39,6 @@ export default StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
   },
+  controls: {},
+  filter: {},
 });
